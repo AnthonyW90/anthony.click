@@ -6,7 +6,7 @@ import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { useState } from 'react'
 
-const Digit = ({ num }) => {
+const Digit = ({ num }: { num: number }) => {
   return (
     <div>
       <svg
