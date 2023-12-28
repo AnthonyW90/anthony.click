@@ -108,7 +108,7 @@ export default function Random() {
       <Container className="mt-9">
         <div className="flex flex-col items-center">
           <Digit num={digit} />
-          <div className="flex w-full flex-col sm:flex-row sm:gap-8">
+          <div className="flex w-full flex-col sm:flex-row sm:justify-center sm:gap-8">
             {[2, 3, 4, 5, 6, 7, 8, 9].map((num) => (
               <Button
                 key={num}
