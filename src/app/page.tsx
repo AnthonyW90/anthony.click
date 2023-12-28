@@ -195,31 +195,24 @@ function Resume() {
   let resume: Array<Role> = [
     {
       company: 'PDX Code Guild',
-      title: 'Software Engineer | Instructor',
+      title: 'Fullstack Web Development Instructor',
       logo: 'https://media.licdn.com/dms/image/C4E0BAQH7S3s2fGX2Lg/company-logo_100_100/0/1519890180368?e=1706745600&v=beta&t=0h6xmHT932IIzJYP8ovGVDKvyjP4pOcRVIluP5aaLWI',
-      start: '2020',
-      end: '2023',
-    },
-    {
-      company: 'PDX Code Guild',
-      title: 'Python Instructor',
-      logo: 'https://media.licdn.com/dms/image/C4E0BAQH7S3s2fGX2Lg/company-logo_100_100/0/1519890180368?e=1706745600&v=beta&t=0h6xmHT932IIzJYP8ovGVDKvyjP4pOcRVIluP5aaLWI',
-      start: '2019',
-      end: '2020',
+      start: 'Nov. 2019',
+      end: 'Jul. 2023',
     },
     {
       company: 'DarkMatter Software',
       title: 'Software Engineer',
       logo: 'https://media.licdn.com/dms/image/D560BAQGKk4XHtDcMYA/company-logo_200_200/0/1684516641594/dark_matter_software_logo?e=1706745600&v=beta&t=v3gmhGUoLaeNupl1qJinXqrm3oF7M9KL6ghx3a9Yeb4',
-      start: '2019',
-      end: '2021',
+      start: 'Nov. 2019',
+      end: 'Feb. 2021',
     },
     {
       company: 'U.S. Navy',
       title: 'Operations Specialist',
       logo: 'https://media.licdn.com/dms/image/D4E0BAQHelM-GutzoOQ/company-logo_200_200/0/1685657232170?e=1706745600&v=beta&t=kWQAB0qzAYrz7061SVFRy4AdDdGGdFvcpWoqP3PhW6s',
-      start: '2012',
-      end: '2016',
+      start: 'Jan. 2012',
+      end: 'Jan. 2016',
     },
   ]
 
