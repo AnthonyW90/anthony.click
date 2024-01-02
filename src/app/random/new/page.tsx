@@ -7,6 +7,19 @@ import { Container } from '@/components/Container';
 import { useState } from 'react';
 
 export default function Random() {
+  const [roomCode, setRoomCode] = useState('');
+  function generateRoomCode() {
+    const length = 5;
+    const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    let result = '';
+
+    for (let i = 0; i < length; i++) {
+      result += chars.charAt(Math.floor(Math.random() * chars.length));
+    }
+
+    setRoomCode(result);
+  }
+
   return (
     <>
       <Container className="mt-9">
@@ -52,11 +65,14 @@ export default function Random() {
                       name="room-code"
                       id="room-code"
                       className="block w-full rounded-none rounded-l-md border-0 py-1.5 pl-10 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 dark:text-gray-100 sm:text-sm sm:leading-6"
-                      placeholder="John Smith"
+                      placeholder="HVACJ"
+                      value={roomCode}
+                      onChange={(e) => setRoomCode(e.target.value)}
                     />
                     <button
                       type="button"
                       className="-ml-px inline-flex items-center gap-x-1.5 rounded-r-md px-3 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 dark:text-gray-100"
+                      onClick={generateRoomCode}
                     >
                       Generate
                     </button>
@@ -69,19 +85,14 @@ export default function Random() {
                   type="submit"
                   className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
-                  Sign in
+                  Join
                 </button>
               </div>
             </form>
 
             <p className="mt-10 text-center text-sm text-gray-500">
-              Not a member?{' '}
-              <a
-                href="#"
-                className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500"
-              >
-                Start a 14 day free trial
-              </a>
+              Either generate a new room code and join or enter an existing
+              room.
             </p>
           </div>
         </div>
